@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>TransitLink - User Registration Page</h1>
+    <form action="">
+        <div style="margin: 10px">
+            <!-- <label for="firstName">First Name:</label> -->
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <!-- <label for="lastName">Last Name:</label> -->
+            <input type="text" name"lastName" id="lastName" placeholder="Last Name" required>
+        </div>
+        <div style="margin: 10px">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" required>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" value="other" required>
+        </div>
+        <div style="margin: 10px">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </div>
+        <div style="margin: 10px">
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" value="birthday" required>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
