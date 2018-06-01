@@ -4,16 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
-    <h1>{{pageTitle}}</h1>
+    {{> header}}
     <h2>{{welcomeMessage}}</h2>
+    <h3>{{sayIt welcomeMessage}}</h3>
     <p>Today is {{currentDate}}</p>
-    <footer>
-        <p>Copyright {{currentYear}}</p>
-    </footer>
+    {{> footer}}
 </body>
 </html>
