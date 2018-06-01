@@ -14,6 +14,15 @@ hbs.registerHelper('getCurrentYear', () => {
 hbs.registerHelper('sayIt', (message) => {
     return message.toUpperCase()
 })
+
+hbs.registerHelper('getMonth', () => {
+    return new Date().getMonth()
+})
+
+hbs.registerHelper('getDate', () => {
+    return new Date().getDate()
+})
+
 app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/public'))
 
@@ -39,15 +48,14 @@ app.use((req,res,next) => {
 
 app.get('/',(req,res) => {
     res.render('home.hbs', {
-        pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to our page',
-        currentDate: new Date().getDate(),
+        pageTitle: 'Transit Link Web App',
+        welcomeMessage: 'Welcome to our application',
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        pageTitle: 'About Page',
+        pageTitle: 'User manual',
     })
 })
 
