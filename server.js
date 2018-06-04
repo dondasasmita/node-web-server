@@ -67,6 +67,10 @@ app.get('/registration', (req,res) => {
     res.render('registration.hbs')
 })
 
+app.get('/donda', (req,res) => {
+    res.render('donda.hbs')
+})
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Unable to handle request.'
