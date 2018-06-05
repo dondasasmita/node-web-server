@@ -68,7 +68,9 @@ app.get('/registration', (req,res) => {
 })
 
 app.get('/donda', (req,res) => {
-    res.render('donda.hbs')
+    res.render('donda.hbs', {
+        pageTitle: 'Custom Page by Donda'
+    })
 })
 
 app.get('/bad', (req, res) => {
